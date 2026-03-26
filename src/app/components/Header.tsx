@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Menu, X, MessageCircle, Calendar } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Menu, X, MessageCircle, Calendar, User } from 'lucide-react';
 import { Button } from './ui/button';
 
 export function Header() {
@@ -31,14 +31,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-700 to-blue-400 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">IM</span>
-            </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent">
-              InfyMailer
-            </span>
-          </div>
+          <img src="/src/assets/logo.webp" alt="InfyMailer" className="w-40 h-10 object-contain" />
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
@@ -82,6 +75,13 @@ export function Header() {
             >
               <Calendar className="w-4 h-4 mr-2" />
               Book a Consultation
+            </Button>
+            <Button
+              onClick={() => window.open('https://app.infymailer.com/customer/index.php', '_blank')}
+              className="bg-gradient-to-r from-blue-700 to-blue-400 text-white"
+            >
+              <User className="w-4 h-4 mr-2" />
+              Register
             </Button>
           </div>
 
@@ -129,6 +129,13 @@ export function Header() {
               >
                 <Calendar className="w-4 h-4 mr-2" />
                 Book a Consultation
+              </Button>
+              <Button
+                onClick={() => window.open('https://app.infymailer.com/customer/index.php', '_blank')}
+                className="bg-gradient-to-r from-blue-700 to-blue-400 text-white"
+              >
+                <User className="w-4 h-4 mr-2" />
+                Register
               </Button>
             </nav>
           </div>
