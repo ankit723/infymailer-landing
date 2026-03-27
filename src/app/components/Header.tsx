@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, MessageCircle, Calendar, User } from 'lucide-react';
 import { Button } from './ui/button';
+import logo from "@/assets/logo_new.webp";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +32,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <img src="/src/assets/logo.webp" alt="InfyMailer" className="w-40 h-10 object-contain" />
+          <img src={logo} alt="InfyMailer" className="w-40 h-10 object-contain" />
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
