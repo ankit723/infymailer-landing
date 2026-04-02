@@ -79,18 +79,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-100 to-blue-50 aspect-video flex items-center justify-center group cursor-pointer">
-              <img
-                src="https://images.unsplash.com/photo-1762330466791-8db62b3c9eee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbWFpbCUyMG1hcmtldGluZyUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NzQwMTMyMzF8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Email Marketing Dashboard"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Play className="w-10 h-10 text-blue-600 ml-1" />
-                </div>
-              </div>
-            </div>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/3O8Eg8Lf31c" title="🚀 Best Bulk Email Software in 2026 | No Block System | Optimized for Inbox Placement" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             <p className="text-center mt-4 text-gray-600 font-medium">
               Watch how to get started
             </p>
