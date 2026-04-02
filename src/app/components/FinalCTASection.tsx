@@ -43,14 +43,6 @@ export function FinalCTASection() {
               <MessageCircle className="w-5 h-5 mr-2" />
               Connect on WhatsApp
             </Button>
-            <Button
-              size="lg"
-              onClick={() => window.open('https://calendly.com/salezlift/30min', '_blank')}
-              className="bg-transparent border-2 border-white text-white hover:bg-white/10 text-lg px-8"
-            >
-              <Calendar className="w-5 h-5 mr-2" />
-              Book a Consultation
-            </Button>
           </div>
 
           <p className="text-blue-100">✓ No credit card required • Start sending in 5 minutes</p>

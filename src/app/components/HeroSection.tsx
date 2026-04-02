@@ -48,7 +48,7 @@ export function HeroSection() {
                 className="bg-gradient-to-r from-blue-700 to-blue-400 text-white hover:shadow-lg transition-shadow text-lg px-8"
               >
                 <Calendar className="w-5 h-5 mr-2" />
-                Book a Consultation
+                Book a Call
               </Button>
               <Button
                 size="lg"

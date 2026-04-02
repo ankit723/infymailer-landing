@@ -1,3 +1,6 @@
+import logo from "@/assets/logo_new.webp";
+
+
 export function Footer() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -13,12 +16,7 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-700 to-blue-400 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">IM</span>
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
-                InfyMailer
-              </span>
+              <img src={logo} alt="InfyMailer" className="w-40 h-10 object-contain bg-white" />
             </div>
             <p className="text-gray-400 mb-4">
               Send bulk emails from day one without blocks or warm-up. Dedicated IPs, smart

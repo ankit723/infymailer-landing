@@ -127,7 +127,7 @@ export function PricingSection() {
                 size="lg"
               >
                 <Calendar className="w-4 h-4 mr-2" />
-                Book a Consultation
+                Book a Call
               </Button>
             </motion.div>
           ))}

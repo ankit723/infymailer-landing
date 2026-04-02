@@ -1,39 +1,35 @@
 import { Star } from 'lucide-react';
 import { motion } from 'motion/react';
+import avatar1 from "@/assets/avatar1.jpg"
+import avatar2 from "@/assets/avatar2.jpg"
+import avatar3 from "@/assets/avatar3.jpg"
+import avatar4 from "@/assets/avatar4.jpg"
 
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: 'Rajesh Kumar',
-      role: 'Marketing Director',
-      company: 'TechStart Solutions',
-      avatar: 'https://images.unsplash.com/photo-1584940121258-c2553b66a739?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzc21hbiUyMGNvbmZpZGVudCUyMHBvcnRyYWl0fGVufDF8fHx8MTc3NDAxMzMzOXww&ixlib=rb-4.1.0&q=80&w=1080',
-      quote:
-        'InfyMailer solved our email deliverability issues instantly. We went from 60% to 95% inbox placement in just one week!',
+      name: 'Kunal Chatterjee ',
+      role: 'Lifecycle Marketing Manager',
+      avatar: avatar1,
+      quote: 'I tried many bulk email tools but never got consistent results. InfyMailer finally worked for me, and I’ve already recommended it to others.',
     },
     {
-      name: 'Priya Sharma',
-      role: 'Founder & CEO',
-      company: 'GrowthLeads',
-      avatar: 'https://images.unsplash.com/photo-1752650736215-0130f82db4fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMGVudHJlcHJlbmV1ciUyMHNtaWxpbmd8ZW58MXx8fHwxNzc0MDI4MTE0fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      quote:
-        'The dedicated IPs and smart rotation are game-changers. We scaled from 10K to 100K emails/day without any blocks.',
+      name: 'Daniel Whitmor',
+      role: 'Director of Demand Generation',
+      avatar: avatar2,
+      quote:'he platform is very easy to use, and the support team is quick and helpful whenever needed. The data provided was relevant and actually usable, which made running campaigns much smoother.'
     },
     {
-      name: 'Amit Patel',
-      role: 'Digital Marketing Manager',
-      company: 'E-Commerce Pro',
-      avatar: 'https://images.unsplash.com/photo-1551989745-347c28b620e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbCUyMGhhcHB5fGVufDF8fHx8MTc3NDAyODExM3ww&ixlib=rb-4.1.0&q=80&w=1080',
-      quote:
-        'Best decision we made! No more warm-up hassles, and their support team is incredibly responsive. Highly recommend!',
+      name: 'Ursula Santos',
+      role: 'Senior Marketing Lead',
+      avatar: avatar3,
+      quote:'Getting started was simple, and everything worked as expected from day one. The system feels reliable, and I didn’t have to spend time fixing issues or tweaking settings.”',
     },
     {
-      name: 'Sneha Reddy',
-      role: 'Head of Sales',
-      company: 'CloudTech India',
-      avatar: 'https://images.unsplash.com/photo-1739298061740-5ed03045b280?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMG9mZmljZXxlbnwxfHx8fDE3NzQxMDUyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      quote:
-        'The ROI is incredible. Our email campaigns now generate 3x more leads with significantly better open rates.',
+      name: 'Michael R. Lawson',
+      role: 'Head of Growth',
+      avatar: avatar4,
+      quote: 'InfyMailer is the exact email outreach solution that I always wish existed. We’ve tried almost every product that people in the outbound space talks about and none of them even comes close to this.',
     },
   ];
 
