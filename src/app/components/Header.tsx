@@ -70,13 +70,7 @@ export function Header() {
               <MessageCircle className="w-4 h-4 mr-2" />
               Connect on WhatsApp
             </Button>
-            <Button
-              onClick={() => window.open('https://calendly.com/salezlift/30min', '_blank')}
-              className="bg-gradient-to-r from-blue-700 to-blue-400 text-white"
-            >
-              <Calendar className="w-4 h-4 mr-2" />
-              Book a Call
-            </Button>
+            
             <Button
               onClick={() => window.open('https://app.infymailer.com/customer/index.php', '_blank')}
               className="bg-gradient-to-r from-blue-700 to-blue-400 text-white"
@@ -131,13 +125,7 @@ export function Header() {
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Connect on WhatsApp
               </Button>
-              <Button
-                onClick={() => window.open('https://calendly.com/salezlift/30min', '_blank')}
-                className="bg-gradient-to-r from-blue-700 to-blue-400 text-white"
-              >
-                <Calendar className="w-4 h-4 mr-2" />
-                Book a Call
-              </Button>
+              
               <Button
                 onClick={() => window.open('https://app.infymailer.com/customer/index.php', '_blank')}
                 className="bg-gradient-to-r from-blue-700 to-blue-400 text-white"

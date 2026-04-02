@@ -42,14 +42,7 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 mb-8">
-              <Button
-                size="lg"
-                onClick={() => window.open('https://calendly.com/salezlift/30min', '_blank')}
-                className="bg-gradient-to-r from-blue-700 to-blue-400 text-white hover:shadow-lg transition-shadow text-lg px-8"
-              >
-                <Calendar className="w-5 h-5 mr-2" />
-                Book a Call
-              </Button>
+              
               <Button
                 size="lg"
                 variant="outline"

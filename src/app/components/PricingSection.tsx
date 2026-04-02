@@ -116,19 +116,6 @@ export function PricingSection() {
                   </li>
                 ))}
               </ul>
-
-              <Button
-                onClick={() => window.open('https://calendly.com/salezlift/30min', '_blank')}
-                className={`w-full ${
-                  plan.popular
-                    ? 'bg-gradient-to-r from-blue-700 to-blue-400 text-white hover:shadow-lg'
-                    : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
-                }`}
-                size="lg"
-              >
-                <Calendar className="w-4 h-4 mr-2" />
-                Book a Call
-              </Button>
             </motion.div>
           ))}
         </div>
