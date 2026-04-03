@@ -16,7 +16,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <div className=" items-center gap-2 hidden xl:flex">
             <img src={logo} alt="InfyMailer" className="w-32 h-8 object-contain bg-white rounded" />
           </div>
 
@@ -37,13 +37,7 @@ export function Footer() {
           </div>
 
           {/* Contact & Book Call */}
-          <div className="flex items-center gap-4">
-            <a
-              href="tel:+917002098782"
-              className="hover:text-white transition-colors text-gray-400 text-sm"
-            >
-              📞 +91-7002098782
-            </a>
+          <div className="flex  xl:flex-rowxl:items-center flex-col justify-center gap-4">
             <Button
               onClick={() => window.open('https://calendly.com/infymailer/30min', '_blank')}
               size="sm"
@@ -52,6 +46,12 @@ export function Footer() {
               <Calendar className="w-3 h-3 mr-1" />
               Book a Call
             </Button>
+            <a
+              href="tel:+917002098782"
+              className="hover:text-white transition-colors text-gray-400 text-sm"
+            >
+              📞 +91-7002098782
+            </a>
           </div>
         </div>
       </div>
