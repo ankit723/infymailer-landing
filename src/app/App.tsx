@@ -15,7 +15,7 @@ import { FloatingWhatsAppButton } from './components/FloatingWhatsAppButton';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pb-20">
       <Header />
       <HeroSection />
       <ProblemSolutionSection />

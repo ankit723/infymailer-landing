@@ -1,4 +1,6 @@
 import logo from "@/assets/logo_new.webp";
+import { Calendar } from 'lucide-react';
+import { Button } from './ui/button';
 
 
 export function Footer() {
@@ -10,87 +12,47 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="fixed bottom-0 left-0 right-0 bg-gray-900 text-white py-4 z-50">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          {/* Logo & Description */}
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="InfyMailer" className="w-40 h-10 object-contain bg-white" />
-            </div>
-            <p className="text-gray-400 mb-4">
-              Send bulk emails from day one without blocks or warm-up. Dedicated IPs, smart
-              rotation, and fully managed infrastructure.
-            </p>
-            <div className="flex gap-4 text-gray-400">
-              <a href="tel:+917002098782" className="hover:text-white transition-colors">
-                📞 +91-7002098782
-              </a>
-            </div>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          {/* Logo */}
+          <div className="flex items-center gap-2">
+            <img src={logo} alt="InfyMailer" className="w-32 h-8 object-contain bg-white rounded" />
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <button
-                  onClick={() => scrollToSection('features')}
-                  className="hover:text-white transition-colors"
-                >
-                  Features
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('pricing')}
-                  className="hover:text-white transition-colors"
-                >
-                  Pricing
-                </button>
-              </li>
-            </ul>
+          {/* Quick Links - Hidden on mobile to save space */}
+          <div className="hidden md:flex gap-6 text-sm">
+            <button
+              onClick={() => scrollToSection('features')}
+              className="hover:text-white transition-colors text-gray-400"
+            >
+              Features
+            </button>
+            <button
+              onClick={() => scrollToSection('pricing')}
+              className="hover:text-white transition-colors text-gray-400"
+            >
+              Pricing
+            </button>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Contact</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a
-                  href="tel:+917002098782"
-                  className="hover:text-white transition-colors"
-                >
-                  Call: +91-7002098782
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/message/CEP4OBODZQF7E1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  WhatsApp Chat
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://calendly.com/salezlift/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  Book Consultation
-                </a>
-              </li>
-            </ul>
+          {/* Contact & Book Call */}
+          <div className="flex items-center gap-4">
+            <a
+              href="tel:+917002098782"
+              className="hover:text-white transition-colors text-gray-400 text-sm"
+            >
+              📞 +91-7002098782
+            </a>
+            <Button
+              onClick={() => window.open('https://calendly.com/infymailer/30min', '_blank')}
+              size="sm"
+              className="bg-gradient-to-r from-blue-700 to-blue-400 text-white hover:from-blue-800 hover:to-blue-500"
+            >
+              <Calendar className="w-3 h-3 mr-1" />
+              Book a Call
+            </Button>
           </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; 2026 InfyMailer. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -80,7 +80,7 @@ export function Header() {
             </Button>
           </div>
           <Button
-              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeATEPX6dh0cG1POl7bqudPrXu95GCyy0AHV5qcLwMaMnrmdA/viewform?usp=publish-editor', '_blank')}
+              onClick={() => window.open('https://calendly.com/infymailer/30min', '_blank')}
               className="bg-gradient-to-r from-blue-700 to-blue-400 text-white"
             >
               <Calendar className="w-4 h-4 mr-2" />

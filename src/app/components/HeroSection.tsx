@@ -79,7 +79,17 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <iframe width="800" height="400" src="https://www.youtube.com/embed/3O8Eg8Lf31c" title="🚀 Best Bulk Email Software in 2026 | No Block System | Optimized for Inbox Placement" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <div className="relative w-full aspect-video">
+              <iframe 
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/3O8Eg8Lf31c" 
+                title="🚀 Best Bulk Email Software in 2026 | No Block System | Optimized for Inbox Placement" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
+              ></iframe>
+            </div>
             <p className="text-center mt-4 text-gray-600 font-medium">
               Watch how to get started
             </p>
